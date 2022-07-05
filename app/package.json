@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "nodemon": "nodemon --watch dist/main.js --exec 'node dist/main.js'"
+  },
   "dependencies": {
     "nodemon": "^2.0.18"
   }

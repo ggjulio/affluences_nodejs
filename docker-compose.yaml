@@ -11,6 +11,8 @@ services:
         - HOST_GID=${HOST_GID-1000}
     volumes:
       - ./app:/app
+    environment:
+      - NODE_ENV=development
     ports:
       - 9229:9229
     networks:
