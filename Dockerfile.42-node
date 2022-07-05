@@ -21,8 +21,12 @@ USER node
 ARG OH_MY_ZSH_THEME=cloud
 RUN set -eux; \
 		sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"; \
-		sed -i "s/\(^ZSH_THEME=\).*/\1$OH_MY_ZSH_THEME/" ~/.zshrc; \
-		npm i typescript --save-dev
+		sed -i "s/\(^ZSH_THEME=\).*/\1$OH_MY_ZSH_THEME/" ~/.zshrc;
+
+RUN	npm i -g \
+			typescript \
+			nodemon
+
 
 
 VOLUME  /app
