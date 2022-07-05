@@ -1,6 +1,4 @@
-import { hello } from "src/hello"
-
 async function run() {
-  console.log(hello("Affluences"))
+  console.log("Hello")
 }
 run()
